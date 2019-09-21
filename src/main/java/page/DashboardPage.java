@@ -24,4 +24,8 @@ public class DashboardPage extends AbstractPage {
     new Actions(driver).doubleClick(driver.findElement(CLOCK_OUT_LOCATOR)).build().perform();
     return new ConfirmationPopup();
   }
+
+  public HamburgerMenu navigateToHamburgerMenu(String hamburgerButton) {
+    return new HamburgerMenu();
+  }
 }

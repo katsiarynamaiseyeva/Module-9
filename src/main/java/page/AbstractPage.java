@@ -4,7 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static core.DriverContainer.getDriver;
+import static core.DriverSingleton.getDriver;
 
 public abstract class AbstractPage {
 

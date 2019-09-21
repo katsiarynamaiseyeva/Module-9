@@ -1,6 +1,6 @@
 package test;
 
-import core.DriverContainer;
+import core.DriverSingleton;
 import element.NotesPopup;
 import element.Popover;
 import org.openqa.selenium.WebDriver;
@@ -52,7 +52,7 @@ public class AddNoteTest {
 
   @AfterClass(description = "Close browser")
   public void closeBrowser() {
-    DriverContainer.getDriver().quit();
-    System.out.println("Browser is closed");
+    DriverSingleton.getDriver().quit();
+    System.out.println("DriverSingleton is closed");
   }
 }

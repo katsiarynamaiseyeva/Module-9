@@ -9,8 +9,9 @@ public class LoginPage extends AbstractPage {
   private static final By PASSWORD_FIELD_LOCATOR = By.xpath("//input[@name='PasswordView']");
   private static final By LOGIN_BUTTON_LOCATOR = By.xpath("//input[@name='LoginButton']");
 
-  public void open() {
+  public LoginPage open() {
     driver.get(DirectUrl.URL);
+    return this;
   }
 
   public DashboardPage login(String username, String password) {

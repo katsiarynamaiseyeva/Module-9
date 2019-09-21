@@ -1,6 +1,6 @@
 package test;
 
-import core.DriverContainer;
+import core.DriverSingleton;
 import element.ConfirmationPopup;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -34,7 +34,7 @@ public class PunchOutTest {
 
   @AfterClass(description = "Close browser")
   public void closeBrowser() {
-    DriverContainer.getDriver().quit();
-    System.out.println("Browser is closed");
+    DriverSingleton.getDriver().quit();
+    System.out.println("DriverSingleton is closed");
   }
 }
